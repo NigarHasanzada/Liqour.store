@@ -251,3 +251,81 @@ $BacGColorDarkORANG: #a23f25;
         p { font-size: 0.8rem; }
     }
 }
+
+
+#desiremeets {
+    width: 100%;
+    height: 40rem;
+
+    .row {
+        width: 90%;
+        margin: 0 auto;
+        height: 40rem;
+        padding: 6rem 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        gap: 2rem; 
+    }
+
+    .col-6 {
+        width: 48%; 
+        height: auto;
+
+        img {
+            width: 100%; 
+            height: 32.2rem; 
+        }
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #333; 
+        gap: 1.2rem;
+        h3{
+            font-size: 2.8rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        span{
+            color: $BacGColorORANG;
+            font-family: "Spirax", system-ui;
+                font-size: 2rem;
+
+            
+        }
+        p{
+            opacity: 0.7;
+        }
+        .since{
+            font-size: 1.5rem;
+        }
+    }
+
+    
+    @media (max-width: 768px) {
+        .col-6 {
+            flex: 0 0 100%;
+            padding: 15px;
+            min-height: 10rem;
+            img{
+                height: 20rem;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .col-6 { 
+            padding: 10px;
+            flex-direction: column;
+            min-height: 10rem; 
+            img{
+                height: 20rem;
+            }
+        }
+
+    }
+}
