@@ -2,6 +2,7 @@
 $BacGColorORANG: #914122;
 $BacGColorlitelOrange: #ab4227;
 $BacGColorDarkORANG: #a23f25;
+$HoverColor:rgb(185, 128, 62);
 .top-header {
     background-color:$BacGColorORANG;
     color: #e0c5b9; 
@@ -255,26 +256,30 @@ $BacGColorDarkORANG: #a23f25;
 
 #desiremeets {
     width: 100%;
-    height: 40rem;
+    height: auto;
 
     .row {
         width: 90%;
         margin: 0 auto;
-        height: 40rem;
-        padding: 6rem 3rem;
+        height: auto;
+        padding-top: 6rem;
+        padding-bottom: 0;
+        padding-left: 3rem;
+        padding-right: 3rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between; 
-        gap: 2rem; 
+        justify-content: space-between;
+        gap: 2rem;
     }
 
     .col-6 {
-        width: 48%; 
-        height: auto;
+        width: 48%;
+        height: 32rem;
+        margin-bottom: 3rem;
 
         img {
-            width: 100%; 
-            height: 32.2rem; 
+            width: 100%;
+            height: 32rem;
         }
     }
 
@@ -283,49 +288,155 @@ $BacGColorDarkORANG: #a23f25;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        color: #333; 
-        gap: 1.2rem;
-        h3{
-            font-size: 2.8rem;
+        color: #333;
+        gap: 0.8rem;
+
+        h3 {
+            font-size: 2.2rem;
             font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
         }
-        span{
+
+        span {
             color: $BacGColorORANG;
             font-family: "Spirax", system-ui;
-                font-size: 2rem;
-
-            
+            font-size: 2rem;
         }
-        p{
+
+        p {
             opacity: 0.7;
         }
-        .since{
+
+        .since {
             font-size: 1.5rem;
         }
     }
 
-    
     @media (max-width: 768px) {
+        .row {
+            flex-direction: column; 
+            align-items: center;
+        }
+
         .col-6 {
-            flex: 0 0 100%;
-            padding: 15px;
-            min-height: 10rem;
-            img{
-                height: 20rem;
+            width: 100%;
+            height: 32rem; 
+            img {
+                height: 32rem;
             }
         }
     }
 
     @media (max-width: 576px) {
-        .col-6 { 
+        .col-6 {
             padding: 10px;
-            flex-direction: column;
-            min-height: 10rem; 
-            img{
-                height: 20rem;
+            width: 100%;
+            height: 32rem; 
+            img {
+                height: 32rem;
             }
         }
-
     }
 }
+
+
+#circles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    margin-top: 8rem;
+
+    .circles {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 10rem;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        .circle_mini {
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #B45133;
+            border-radius: 50%;
+            padding: 0.5rem;
+            transition: 0.6s;
+        }
+    }
+
+    .circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 7.6rem;
+        height: 8.3rem;
+        margin: 5px 0.5px;
+        border-radius: 50%;
+    }
+
+    .circle img {
+        width: 8.6rem;
+        height: 8.8rem;
+        border-radius: 50%;
+    }
+
+    h1 {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .circlesandtext {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .circle_mini:hover {
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ffffff;
+        opacity: 0.5;
+        z-index: 999;
+        border-radius: 50%;
+        padding: 0.5rem;
+        transition: 0.6s;
+        background-color: $HoverColor;
+    }
+
+    @media (max-width: 768px) {
+        #circles {
+            flex-direction: column;
+            margin-top: 40rem; 
+            height: auto; 
+        }
+
+        .circles {
+            margin-top: 40rem;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem; 
+            height: auto; 
+        }
+
+        .circle_mini {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+}
+
