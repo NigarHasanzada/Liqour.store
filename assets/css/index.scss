@@ -695,7 +695,6 @@ $HoverColor:rgb(185, 128, 62);
     justify-content: center;
     margin-top: 4rem;
 
-    // Arxa fonu tündləşdirmək üçün əlavə overlay
     .dark-overlay {
         position: absolute;
         top: 0;
@@ -740,14 +739,14 @@ $HoverColor:rgb(185, 128, 62);
         position: relative;
         text-align: center;
         backdrop-filter: blur(2.5px); 
-        isolation: isolate; // Overlayin təsir etməməsi üçün
+        isolation: isolate; 
 
         .quote-icon {
             position: absolute;
             top: -15px;
             left: 50%;
             transform: translateX(-50%);
-            background: #e76f51; // Narıncı rəng
+            background: #e76f51; 
             color: white;
             width: 40px;
             height: 40px;
@@ -756,9 +755,9 @@ $HoverColor:rgb(185, 128, 62);
             justify-content: center;
             border-radius: 50%;
             font-size: 1.5rem;
-            z-index: 9999; // Ən üstdə görünsün
-            mix-blend-mode: normal; // Rəngi solmasın
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); // Kölgə effekti
+            z-index: 9999; 
+            mix-blend-mode: normal; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
         }
 
         .testimonial-text {
@@ -798,7 +797,7 @@ $HoverColor:rgb(185, 128, 62);
     }
 
     .carousel-indicators {
-        z-index: 15; // Digər elementlərin altında qalmasın
+        z-index: 15; 
     }
 
     .carousel-control-prev,
