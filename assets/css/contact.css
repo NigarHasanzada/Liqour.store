@@ -34,6 +34,20 @@ body {
   color: #ffffff;
 }
 
+.top-header, .navbar-expand-lg {
+  animation: fadeInDown 1s ease-in-out;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .navbar-expand-lg {
   width: 100%;
   z-index: 1000;
@@ -94,6 +108,17 @@ body {
   align-items: flex-end;
   justify-content: flex-end;
   padding: 0 15px;
+  animation: zoomIn 1.5s ease-in-out;
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 .hero-wrap .overlay {
   position: absolute;
@@ -393,6 +418,17 @@ body {
   color: white;
   margin-top: 5rem;
   flex-direction: column;
+  animation: fadeInUp 1s ease-in-out;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .main_footer .row {
   width: 75%;
@@ -501,11 +537,14 @@ body {
     font-size: 1rem;
   }
   .main_footer .circles {
-    width: 100%;
+    width: 30rem;
     justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    height: auto;
   }
   .main_footer .circle {
     width: 2rem;
-    height: 2rem;
+    height: 4rem;
   }
 }/*# sourceMappingURL=contact.css.map */
