@@ -3,6 +3,8 @@ $BacGColorORANG: #914122;
 $BacGColorlitelOrange: #ab4227;
 $BacGColorDarkORANG: #a23f25;
 $HoverColor:rgb(185, 128, 62);
+$FooterBGColor:#1A1A1A;
+$LitleBGColo:#F4F3EF;
 
 .top-header {
     background-color:$BacGColorORANG;
@@ -804,4 +806,212 @@ $HoverColor:rgb(185, 128, 62);
     .carousel-control-next {
         z-index: 20;
     }
+
+
+@media (max-width: 1200px) {
+    #carouselExampleCaptions {
+        margin-top: 6rem;
+        padding: 1.5rem;
+    }
 }
+
+@media (max-width: 992px) {
+
+    #carouselExampleCaptions {
+        margin-top: 5rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner{
+        margin-top: 15rem;
+        padding-bottom: 3rem;
+        .col-md-4{
+            margin-top: 2rem;
+        }
+    }
+    #carouselExampleCaptions {
+        margin-top: 3rem;
+        padding: 0.5rem;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-inner{
+        margin-top: 15rem;
+        padding-bottom: 3rem;
+    }
+    #carouselExampleCaptions {
+        margin-top: 2rem;
+        padding: 0.5rem;
+        text-align: center;
+    }
+}
+
+}
+
+
+.main_footer {
+    width: 100%;
+    min-height: fit-content;
+    background-color: $FooterBGColor;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 5rem;
+    flex-direction: column;
+    animation: fadeInUp 1s ease-in-out;
+    
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+  
+    .row {
+      width: 75%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 2rem;
+      flex-wrap: nowrap;
+      margin-top: 12rem;
+  
+      .col-2 {
+        width: 20%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0.8rem;
+  
+        a {
+          text-decoration: none;
+          color: white;
+        }
+  
+        h1 {
+          font-size: 1.5rem;
+          color: gray;
+        }
+  
+        .circles {
+          display: flex;
+          width: 100%;
+          height: 5rem;
+          justify-content: space-around;
+  
+          .circle {
+            width: 3.3rem;
+            height: 3.3rem;
+            border-radius: 50%;
+            background-color: $BacGColorORANG;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+  
+            i {
+              opacity: 0.5;
+            }
+          }
+        }
+  
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.8rem;
+          opacity: 0.5;
+  
+          li {
+            list-style: none;
+          }
+        }
+      }
+    }
+
+    .footer_two{
+      background-color: #010101;
+      width: 100%;
+      display: flex;
+      padding-left: 10rem;
+    }
+
+    @media (max-width: 1024px) {
+      .main_footer {
+        height: auto; 
+      }
+      .row {
+        width: 90%; 
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 5rem; 
+      }
+    
+      .col-2 {
+        width: 100%; 
+        align-items: center; 
+        margin: 0; 
+        padding: 0; 
+      }
+    
+      .circles {
+        width: 100%;
+        height: auto;
+        justify-content: center; 
+      }
+    
+      .circle {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    
+      h1 {
+        font-size: 1.2rem; 
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .main_footer {
+        height: auto;
+      }
+      .row {
+        width: 95%;
+        margin-top: 3rem;
+      }
+    
+      .col-2 {
+        width: 100%; 
+        gap: 1rem; 
+        margin: 0; 
+        padding: 0; 
+      }
+    
+      h1 {
+        font-size: 1rem; 
+      }
+    
+      .circles {
+        width: 30rem;
+        justify-content: center; 
+        flex-direction: column;
+        gap: 0.2rem;
+        height: auto;
+      }
+    
+      .circle {
+        width: 2rem;
+        height: 4rem; 
+      }
+    }
+  }    
