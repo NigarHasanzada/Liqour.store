@@ -43,6 +43,21 @@ $LitleBGColo:#F4F3EF;
     }
 }
 
+
+.top-header, .navbar-expand-lg {
+    animation: fadeInDown 1s ease-in-out;
+    @keyframes fadeInDown {
+      from {
+          opacity: 0;
+          transform: translateY(-20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+    }
+  }
+
 .navbar-expand-lg {
     width: 100%;
     z-index: 1000;
@@ -79,7 +94,8 @@ $LitleBGColo:#F4F3EF;
 
     @media (max-width: 768px) {
         .navbar-toggler {
-            background-color: #ff6600;
+            color: white;
+            font-size: medium;
         }
 
         .navbar-nav {
