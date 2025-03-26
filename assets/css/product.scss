@@ -321,6 +321,41 @@ $LitleBGColo:#F4F3EF;
               
           }
       }
+      .pagination {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        gap: 10px; 
+        
+        .page-item {
+            .page-link {
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: #a33d2b;
+                font-weight: bold;
+                border: none;
+                transition: background 0.3s ease;
+    
+                &:hover {
+                    background-color: $BacGColorlitelOrange;
+                    color: #a33d2b;
+                }
+            }
+    
+            &.active .page-link {
+                background-color: $BacGColorlitelOrange;
+                color: white;
+                border-color: $BacGColorlitelOrange;
+            }
+        }
+    }
+    
+      
 
       .product-list {
         list-style: none;
@@ -372,34 +407,41 @@ $LitleBGColo:#F4F3EF;
 
     .sidebar { 
         min-height: 100vh;
-        body {
-          background-color: #f8f9fa;
-      }
-      
-      .product-list {
-          border: none;
-          background: white;
-          padding: 0;
-      
-          .list-group-item {
-              border: none;
-              padding: 12px 15px;
-              font-size: 16px;
-              cursor: pointer;
-              transition: background 0.3s ease;
-      
-              &:hover {
-                  background-color: #f1f1f1;
-              }
-      
-              .arrow {
-                  color: #b0b0b0;
-                  font-size: 18px;
-              }
-          }
-      }
-      
+    
+        .product-list {
+            border: none;
+            background: white;
+            padding: 0;
+    
+            .list-group-item {
+                border: none;
+                padding: 12px 15px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+    
+                &:hover {
+                    background-color: #f1f1f1;
+                }
+    
+                .arrow {
+                    color: #b0b0b0;
+                    font-size: 18px;
+                }
+            }
+        }
+    
+        .blog-list {
+            img {
+                width: 4rem;
+                height: 4rem;
+                border-radius: 0.5rem;
+                object-fit: cover;
+            }
+        }
     }
+    
+}
 }
 
 
@@ -407,7 +449,7 @@ $LitleBGColo:#F4F3EF;
 
 
 
-
+ 
 .main_footer {
     width: 100%;
     min-height: fit-content;
@@ -569,4 +611,4 @@ $LitleBGColo:#F4F3EF;
         height: 4rem; 
       }
     }
-  }    
+  }   
