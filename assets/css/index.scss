@@ -281,8 +281,19 @@ $LitleBGColo:#F4F3EF;
     @media (max-width: 768px) {
         .col-4 {
             flex: 0 0 100%;
-            padding: 15px;
             min-height: 12rem;
+        
+        
+        }
+        .litle_orange {
+            background-color: $BacGColorlitelOrange;
+            width: 100%;
+        }
+    
+        .orange {
+            background-color: $BacGColorDarkORANG;
+            width: 100%;
+
         }
 
         .icon i { font-size: 2rem; }
@@ -292,13 +303,24 @@ $LitleBGColo:#F4F3EF;
 
     @media (max-width: 576px) {
         .col-4 { 
-            padding: 10px;
             min-height: 10rem; 
+        
         }
         .icon i { font-size: 1.8rem; }
         h3 { font-size: 0.9rem; }
         p { font-size: 0.8rem; }
+        .litle_orange {
+            background-color: $BacGColorlitelOrange;
+            width: 100%;
+        }
+    
+        .orange {
+            background-color: $BacGColorDarkORANG;
+            width: 100%;
+
+        }
     }
+
 }
 
 
@@ -488,6 +510,56 @@ $LitleBGColo:#F4F3EF;
             height: 10rem;
         }
     }
+    
+@media (max-width: 576px) {
+    #circles {
+        margin-top: 34rem;
+        height: auto;
+    }
+
+    .circles {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .circle_mini {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .circle img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    h1 {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #circles {
+        margin-top: 30rem;
+    }
+
+    .circles {
+        gap: 0.6rem;
+    }
+
+    .circle_mini {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .circle img {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    h1 {
+        font-size: 0.8rem;
+    }
+}
 }
 
 
@@ -643,8 +715,7 @@ $LitleBGColo:#F4F3EF;
     
   
     
-    
-    @media(max-width: 1200px) {
+    @media (max-width: 1200px) {
         .first_row {
             margin-top: 20rem; 
         }
@@ -654,10 +725,11 @@ $LitleBGColo:#F4F3EF;
         }
     
         .col-3 {
-            width: 48%; 
+            width: 48%;
         }
     }
-    @media(max-width: 996px) {
+    
+    @media (max-width: 996px) {
         .first_row {
             margin-top: 20rem; 
         }
@@ -667,31 +739,94 @@ $LitleBGColo:#F4F3EF;
         }
     
         .col-3 {
-            width: 33%; 
+            width: 33%;
         }
     }
     
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
         .first_row {
             margin-top: 60rem;
         }
     
         .second_row, .three_row {
             .col-3 {
-                width: 100%; 
+                width: 100%;
                 margin-bottom: 2rem;
             }
         }
+    
+        .col-4 {
+            flex: 0 0 100%;
+            padding: 15px;
+            min-height: 12rem;
+        }
+    
+        .icon i {
+            font-size: 2rem;
+        }
+    
+        h3 {
+            font-size: 1rem;
+        }
+    
+        p {
+            font-size: 0.85rem;
+        }
+    
+        .row {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .col-6 {
+            width: 100%;
+            height: 32rem;
+        }
+    
+        .circle_mini {
+            width: 10rem;
+            height: 10rem;
+        }
     }
     
-    @media(max-width: 480px) {
+    @media (max-width: 576px) {
+        .col-4 {
+            padding: 10px;
+            min-height: 10rem;
+        }
+    
+        .icon i {
+            font-size: 1.8rem;
+        }
+    
+        h3 {
+            font-size: 0.9rem;
+        }
+    
+        p {
+            font-size: 0.8rem;
+        }
+    
+        .col-6 {
+            padding: 10px;
+            width: 100%;
+            height: 32rem;
+        }
+    
+        .col-3 {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
         .first_row {
-            margin-top: 60rem; 
+            margin-top: 60rem;
         }
     
         .second_row, .three_row {
             .col-3 {
-                width: 100%; 
+                width: 100%;
                 margin-bottom: 2rem;
             }
         }

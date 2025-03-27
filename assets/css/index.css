@@ -266,8 +266,15 @@
 @media (max-width: 768px) {
   #orange_area .col-4 {
     flex: 0 0 100%;
-    padding: 15px;
     min-height: 12rem;
+  }
+  #orange_area .litle_orange {
+    background-color: #ab4227;
+    width: 100%;
+  }
+  #orange_area .orange {
+    background-color: #a23f25;
+    width: 100%;
   }
   #orange_area .icon i {
     font-size: 2rem;
@@ -281,7 +288,6 @@
 }
 @media (max-width: 576px) {
   #orange_area .col-4 {
-    padding: 10px;
     min-height: 10rem;
   }
   #orange_area .icon i {
@@ -292,6 +298,14 @@
   }
   #orange_area p {
     font-size: 0.8rem;
+  }
+  #orange_area .litle_orange {
+    background-color: #ab4227;
+    width: 100%;
+  }
+  #orange_area .orange {
+    background-color: #a23f25;
+    width: 100%;
   }
 }
 
@@ -461,6 +475,46 @@
     height: 10rem;
   }
 }
+@media (max-width: 576px) {
+  #circles #circles {
+    margin-top: 34rem;
+    height: auto;
+  }
+  #circles .circles {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  #circles .circle_mini {
+    width: 7rem;
+    height: 7rem;
+  }
+  #circles .circle img {
+    width: 7rem;
+    height: 7rem;
+  }
+  #circles h1 {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 480px) {
+  #circles #circles {
+    margin-top: 30rem;
+  }
+  #circles .circles {
+    gap: 0.6rem;
+  }
+  #circles .circle_mini {
+    width: 6rem;
+    height: 6rem;
+  }
+  #circles .circle img {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  #circles h1 {
+    font-size: 0.8rem;
+  }
+}
 
 #threerow_area {
   width: 100%;
@@ -621,6 +675,56 @@
     margin-top: 60rem;
   }
   #threerow_area .second_row .col-3, #threerow_area .three_row .col-3 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #threerow_area .col-4 {
+    flex: 0 0 100%;
+    padding: 15px;
+    min-height: 12rem;
+  }
+  #threerow_area .icon i {
+    font-size: 2rem;
+  }
+  #threerow_area h3 {
+    font-size: 1rem;
+  }
+  #threerow_area p {
+    font-size: 0.85rem;
+  }
+  #threerow_area .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  #threerow_area .col-6 {
+    width: 100%;
+    height: 32rem;
+  }
+  #threerow_area .circle_mini {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+@media (max-width: 576px) {
+  #threerow_area .col-4 {
+    padding: 10px;
+    min-height: 10rem;
+  }
+  #threerow_area .icon i {
+    font-size: 1.8rem;
+  }
+  #threerow_area h3 {
+    font-size: 0.9rem;
+  }
+  #threerow_area p {
+    font-size: 0.8rem;
+  }
+  #threerow_area .col-6 {
+    padding: 10px;
+    width: 100%;
+    height: 32rem;
+  }
+  #threerow_area .col-3 {
     width: 100%;
     margin-bottom: 2rem;
   }
