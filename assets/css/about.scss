@@ -41,6 +41,62 @@ $LitleBGColo:#F4F3EF;
     .social-icons a:hover {
         color: #ffffff;
     }
+    @media (max-width: 992px) {
+        .top-header {
+            font-size: 12px;
+            padding: 0.4rem 1.5rem;
+        }
+    
+        .text-end {
+            gap: 1.5rem;
+        }
+    
+        .auth-links a,
+        .social-icons a {
+            font-size: 12px;
+            margin-left: 8px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .top-header {
+            flex-direction: column;
+            text-align: center;
+            padding: 0.3rem;
+            font-size: 11px;
+        }
+    
+        .text-end {
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 0.2rem;
+        }
+    
+        .social-icons a,
+        .auth-links a {
+            font-size: 11px;
+            margin-left: 5px;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .top-header {
+            font-size: 10px;
+            padding: 0.2rem;
+        }
+    
+        .text-end {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0.1rem;
+        }
+    
+        .social-icons a,
+        .auth-links a {
+            font-size: 10px;
+        }
+    }
+    
 }
 
 .top-header, .navbar-expand-lg {
@@ -88,6 +144,12 @@ $LitleBGColo:#F4F3EF;
     .fw-bold {
         color: white;
         font-size: 1.5rem;
+    }
+    @media (max-width: 996px) {
+        .navbar-toggler {
+            color: white;
+            font-size: medium;
+        }
     }
 
 
@@ -269,8 +331,19 @@ $LitleBGColo:#F4F3EF;
     @media (max-width: 768px) {
         .col-4 {
             flex: 0 0 100%;
-            padding: 15px;
             min-height: 12rem;
+        
+        
+        }
+        .litle_orange {
+            background-color: $BacGColorlitelOrange;
+            width: 100%;
+        }
+    
+        .orange {
+            background-color: $BacGColorDarkORANG;
+            width: 100%;
+
         }
 
         .icon i { font-size: 2rem; }
@@ -280,13 +353,24 @@ $LitleBGColo:#F4F3EF;
 
     @media (max-width: 576px) {
         .col-4 { 
-            padding: 10px;
             min-height: 10rem; 
+        
         }
         .icon i { font-size: 1.8rem; }
         h3 { font-size: 0.9rem; }
         p { font-size: 0.8rem; }
+        .litle_orange {
+            background-color: $BacGColorlitelOrange;
+            width: 100%;
+        }
+    
+        .orange {
+            background-color: $BacGColorDarkORANG;
+            width: 100%;
+
+        }
     }
+
 }
 
 
@@ -588,7 +672,7 @@ $LitleBGColo:#F4F3EF;
 
 @media (max-width: 992px) {
     #carouselExampleCaptions {
-        margin-top: 20rem;
+        margin-top: 25rem;
         padding: 1rem;
         padding-top: 20rem; 
     }

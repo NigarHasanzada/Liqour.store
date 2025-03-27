@@ -29,6 +29,53 @@
 .top-header .social-icons a:hover {
   color: #ffffff;
 }
+@media (max-width: 992px) {
+  .top-header .top-header {
+    font-size: 12px;
+    padding: 0.4rem 1.5rem;
+  }
+  .top-header .text-end {
+    gap: 1.5rem;
+  }
+  .top-header .auth-links a,
+  .top-header .social-icons a {
+    font-size: 12px;
+    margin-left: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .top-header .top-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.3rem;
+    font-size: 11px;
+  }
+  .top-header .text-end {
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.2rem;
+  }
+  .top-header .social-icons a,
+  .top-header .auth-links a {
+    font-size: 11px;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 576px) {
+  .top-header .top-header {
+    font-size: 10px;
+    padding: 0.2rem;
+  }
+  .top-header .text-end {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+  }
+  .top-header .social-icons a,
+  .top-header .auth-links a {
+    font-size: 10px;
+  }
+}
 
 .top-header, .navbar-expand-lg {
   animation: fadeInDown 1s ease-in-out;
@@ -71,6 +118,12 @@
 .navbar-expand-lg .fw-bold {
   color: white;
   font-size: 1.5rem;
+}
+@media (max-width: 996px) {
+  .navbar-expand-lg .navbar-toggler {
+    color: white;
+    font-size: medium;
+  }
 }
 @media (max-width: 768px) {
   .navbar-expand-lg .navbar-toggler {
@@ -256,8 +309,15 @@
 @media (max-width: 768px) {
   #orange_area .col-4 {
     flex: 0 0 100%;
-    padding: 15px;
     min-height: 12rem;
+  }
+  #orange_area .litle_orange {
+    background-color: #ab4227;
+    width: 100%;
+  }
+  #orange_area .orange {
+    background-color: #a23f25;
+    width: 100%;
   }
   #orange_area .icon i {
     font-size: 2rem;
@@ -271,7 +331,6 @@
 }
 @media (max-width: 576px) {
   #orange_area .col-4 {
-    padding: 10px;
     min-height: 10rem;
   }
   #orange_area .icon i {
@@ -282,6 +341,14 @@
   }
   #orange_area p {
     font-size: 0.8rem;
+  }
+  #orange_area .litle_orange {
+    background-color: #ab4227;
+    width: 100%;
+  }
+  #orange_area .orange {
+    background-color: #a23f25;
+    width: 100%;
   }
 }
 
@@ -546,7 +613,7 @@
 
 @media (max-width: 992px) {
   #carouselExampleCaptions {
-    margin-top: 20rem;
+    margin-top: 25rem;
     padding: 1rem;
     padding-top: 20rem;
   }
